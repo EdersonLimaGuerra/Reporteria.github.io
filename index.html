@@ -64,9 +64,14 @@
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-4 px-4">
-                <div class="d-flex align-items-center">
-                    <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
-                    <h2 class="fs-2 m-0 text-white">Dashboard Overview</h2>
+                <div class="d-flex align-items-center w-100 justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+                        <h2 class="fs-2 m-0 text-white" id="report-title">Dashboard Overview</h2>
+                    </div>
+                    <a id="external-link" href="#" target="_blank" class="btn btn-outline-info btn-sm d-none">
+                        <i class="fas fa-external-link-alt me-2"></i>Ver en pantalla completa
+                    </a>
                 </div>
             </nav>
 
@@ -85,8 +90,10 @@
                                         <span class="visually-hidden">Loading...</span>
                                     </div>
                                 </div>
-                                <iframe id="powerbi-frame" title="Power BI Report" style="display: none;" width="100%"
-                                    height="100%" src="" frameborder="0" allowFullScreen="true"></iframe>
+                                <iframe id="powerbi-frame" title="Reporte" class="w-100 h-100" src="about:blank"
+                                    frameborder="0" allowFullScreen="true"
+                                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                                    style="opacity: 0; transition: opacity 0.5s ease;"></iframe>
                             </div>
                         </div>
                     </div>
